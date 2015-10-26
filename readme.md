@@ -41,7 +41,7 @@ The page should be responsive. A creative has been supplied for the larger views
 
 ## testing
 
-- create a couple tests, no more than that.
+- create a couple of tests, no more than that.
 
 ## Pre requisites
 
