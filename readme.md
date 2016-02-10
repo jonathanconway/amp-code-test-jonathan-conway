@@ -14,7 +14,7 @@ This test is designed to asses your skill level.
 - AngularJS
 - Automated testing of JavaScript
 - Git
-- Grunt
+- Grunt or Gulp (we use gulp here)
 
 ## The end result should be:
 
@@ -64,7 +64,3 @@ npm i
 bower i
 
 npm i karma-cli -g
-
-
-
-
