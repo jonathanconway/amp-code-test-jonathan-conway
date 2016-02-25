@@ -1,6 +1,6 @@
 # AMP code test
 
-This test is designed to asses your skill level.
+This test is designed to assess your skill level.
 
 ## The test should only take a maximum of 2 hours, don't spend any longer!
 
@@ -16,6 +16,8 @@ This test is designed to asses your skill level.
 - Git
 - Grunt or Gulp (we use gulp here)
 
+Lastly, your ability to follow a brief or a spec.
+
 ## Stuff you can leave out
 
 - minification & concatenation
@@ -24,7 +26,10 @@ This test is designed to asses your skill level.
 
 ## Functional requirements
 
-1. We are wanting you to display a list of users with a filter. Preferably, the list will update whilst the user is typing or autocomplete if you will.
+1. We are wanting you to display a list of users with a filter. Preferably, the list will update whilst the user is typing or autocomplete if you will. 
+
+We have supplied the JSON for you. It may or may not be correct. 
+
 The page should be responsive. A creative has been supplied for the larger views, however, for the smaller views you'll need to use your judgement.
 
 ## javascript
