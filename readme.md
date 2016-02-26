@@ -26,7 +26,7 @@ Lastly, your ability to follow a brief or a spec.
 
 ## Functional requirements
 
-1. We are wanting you to display a list of users with a filter. Preferably, the list will update whilst the user is typing or autocomplete if you will. 
+1. We are wanting you to display a list of users with a filter. Preferably, the list will update whilst the user is typing or autocomplete if you will. What would also be nice is (if you have time) is to provide a means of sorting the list.
 
 We have supplied the JSON for you. It may or may not be correct. 
 
