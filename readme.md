@@ -1,71 +1,64 @@
-# AMP code test
+# AMP code test submission
 
-This test is designed to assess your skill level.
+This is my submission to the AMP code test.
 
-## The test should only take a maximum of 2 hours, don't spend any longer!
+## Skills
 
-## We are looking at the following skills:
+I have attempted to demonstrate my skills in:
 
 - Responsive design
+  - "People" tiles are responsive, using Bootstrap grid system.
+  - "Sort" button is also responsive, using Bootstrap.
 - Sass / css
+  - Styling is extremely minimal, using Sass variables for configuration, rather than re-styling.
 - Semantics
+  - Descriptive class names on key elements and textual alternatives for non-text elements.
 - Accessibility
+  - Use of labels, for form fields.
+  - Textual alternatives for non-text elements.
 - JavaScript
+  - Clean, minimal Javascript code to satisfy requirements.
 - AngularJS
+  - Appropriate use of Angular framework:
+    - Controller for controlling data flow.
+    - View and angular directives and filters for filtering, sorting and displaying data.
+    - Angular mocks and utilities for testing.
 - Automated testing of JavaScript
+  - Unit testing where possible.
+  - Minimal e2e testing, where required. (See Assumptions & Considerations below.)
 - Git
+  - Tried to keep commits small and focussed, with changes summarised in a descriptive commit message.
 - Grunt or Gulp (we use gulp here)
+  - Used Grunt as already configured, with some minor modifications.
 
-Lastly, your ability to follow a brief or a spec.
+## Assumptions and Considerations
 
-## Stuff you can leave out
+- There were some minor mistakes in the data, which I corrected manually. I assumed that, given the time-constraint, this would be preferred.
+- I have not implemented minification or concatenation of Javascript.
+- The solution was only tested in the latest version of Chrome (using Dev tools, to simulate different screen-sizes).
+- As the filtering and sorting is done with built-in Angular directives (which I believe is the simple, effective, minimal way of doing it in this scenario) I didn't think unit-tests would be possible or appropriate. So I've tested those features using two simple e2e tests.
+- I have set things up simply, with a single index page / view and controller. I opted not to go as far as breaking up the screen into directives, as I didn't see that being necessary, given the limited scope of the exercise.
 
-- minification & concatenation
-- cross browser support
-- end to end testing
+## Installation
 
-## Functional requirements
+1. Clone the solution and `cd` into the folder
+2. `npm i`
+3. `bower i`
+4. `npm i -g lite-server`
+4. `npm i -g protractor` (if you wish to run e2e tests)
+5. `grunt`
+6. `npm start`
 
-1. We are wanting you to display a list of users with a filter. Preferably, the list will update whilst the user is typing or autocomplete if you will. What would also be nice is (if you have time), is to provide a means of sorting the list.
+## Running
 
-We have supplied the JSON for you. It may or may not be correct. 
+### Running the solution
 
-The page should be responsive. A creative has been supplied for the larger views, however, for the smaller views you'll need to use your judgement.
+`npm start`
 
-## javascript
+### Running the unit tests
 
-If you need to install dependencies, servers or anything to run the project then please do so. Just bear in mind, that we are accessing your knowedge in this area. 
+`npm test`
 
-## Style
+### Running the end-to-end tests
 
-- DO NOT USE ANY OTHER LIBRARIES - use only what's included in the test, I was nice and included bootstrap for you.
-
-## testing
-
-- create a couple of tests, no more than that.
-
-## Pre requisites
-
-- node
-- npm
-- grunt
-
-## Getting started
-
-1. Fork this repository and create a branch named after yourself. ***Once your done you will need to create a pull request so we can view your changes.***
-
-- Screen creative for desktop supplied under the creative folder.
-
-## Commands
-
-In order to run the project you'll need to use the following commands.
-
-npm i
-
-bower i
-
-npm i karma-cli -g
-
-## The end result should be:
-
-Simple, testable & well formatted code & an application that can run.
+`npm e2e`

@@ -3,7 +3,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
-        sassFiles: 'app/**/*.scss',
 
         sass: {
             dist: {
@@ -19,15 +18,44 @@ module.exports = function(grunt) {
                 files: 'app/**/*.scss'
             }
 
-        }
+        },
+
+        concurrent: {
+            e2e: ['connect', 'protractor'],
+            dev: ['connect', 'sass', 'watch']
+        },
+
+        connect: {
+            server: {
+                options: {
+                    open: true,
+                    keepalive: true
+                }
+            }
+        },
+
+        protractor: {
+            options: {
+                configFile: './protractor.config.js',
+            },
+            all: {
+                options: {
+                    configFile: './protractor.config.js',
+                }
+            }
+        },
+
     });
 
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-protractor-runner');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-concurrent');
 
 
-    grunt.registerTask('dev', ['default', 'watch']);
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('e2e', ['concurrent:e2e']);
+    grunt.registerTask('default', ['concurrent:dev']);
 
 };
