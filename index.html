@@ -26,7 +26,7 @@
         <div class="people row">
             <div class="person col-xs-6 col-sm-4 col-md-2" ng-repeat="person in app.people | filter : search : strict | orderBy : (sort ? 'firstName' : null)">
                 <div class="thumbnail">
-                    <img class="avatar" src="{{person.picture}}" alt="Avatar of {{person.firstName}} {{person.lastName}}" />
+                    <img class="avatar" ng-attr-src="{{person.picture}}" alt="Avatar of {{person.firstName}} {{person.lastName}}" />
 
                     <div class="caption text-center">
                         <h3 class="name">{{person.firstName}}</h3>
