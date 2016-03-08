@@ -1,4 +1,4 @@
 exports.config = {
    framework: 'mocha',
-   specs: ['test/app.protractor.test.js']
+   specs: ['e2e-test/**/*.protractor.test.js']
 };
