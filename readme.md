@@ -38,7 +38,7 @@ I have attempted to demonstrate my skills in:
 - The solution was only tested in the latest version of Chrome (using Dev tools, to simulate different screen-sizes).
 - As the filtering and sorting is done with built-in Angular directives (which I believe is the simple, effective, minimal way of doing it in this scenario) I didn't think unit-tests would be possible or appropriate. So I've tested those features using two simple e2e tests.
 - I have set things up simply, with a single index page / view and controller. I opted not to go as far as breaking up the screen into directives, as I didn't see that being necessary, given the limited scope of the exercise.
-- The whole thing has been tested on a Windows VM, freshly installed from scratch. However, if you have any issues during installation, please feel free to contact me: jonathan.conway@gmail.com.
+- The whole thing (except for e2e tests, which I had some difficulty setting up on Windows) has been tested on a Windows VM, freshly installed from scratch. However, if you have any issues during installation, please feel free to contact me: jonathan.conway@gmail.com.
 
 ## Installation
 
