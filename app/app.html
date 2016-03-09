@@ -1,0 +1,26 @@
+<h1>People search</h1>
+
+<div class="search-box row form-group">
+    <div class="col-xs-10">
+        <label for="search-term" class="sr-only">Search term</label>
+        <input class="form-control input-lg" id="search-term" type="text" placeholder="enter your search term" [(ngModel)]="search.firstName" />
+    </div>
+    <div class="col-xs-2">
+        <button type="button" class="sort btn btn-lg btn-default btn-block" [ngClass]="{ active: sortBy }" (click)="sortClick()" title="Sort">
+            <span class="glyphicon glyphicon-sort-by-alphabet"></span>
+            <span class="hidden-xs">Sort</span>
+        </button>
+    </div>
+</div>
+
+<div class="people row">
+    <div *ngFor="#person of people | filter: search.firstName | orderBy: [sortBy]" class="person col-xs-6 col-sm-4 col-md-2">
+        <div class="thumbnail">
+            <img class="avatar" src="{{person.picture}}" alt="Avatar of {{person.firstName}} {{person.lastName}}" />
+
+            <div class="caption text-center">
+                <h3 class="name">{{person.firstName}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
