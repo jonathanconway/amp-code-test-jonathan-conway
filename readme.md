@@ -61,3 +61,9 @@ I have attempted to demonstrate my skills in:
 ### Running the end-to-end tests
 
 `npm run e2e`
+
+## Angular2 version
+
+I have built a preliminary Angular2 version of the test. This version isn't finalised or stable, but it demonstrates my interest in becoming more familiar with Angular2.
+
+You can find it in the [gulp-angular2](https://bitbucket.org/jonathanconway/amp-code-test-jonathan-conway/src/79471797a9e95374331cbe46fa780a10ad003795/?at=gulp-angular2) branch.
